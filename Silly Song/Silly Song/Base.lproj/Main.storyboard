@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G16b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chalkduster.ttf">
+            <string>Chalkduster</string>
+        </array>
+        <array key="GillSans.ttc">
+            <string>GillSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Silly_Song" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peedan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMi-wE-495">
+                                <rect key="frame" x="83" y="62" width="208" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="0Aa-nV-lyE"/>
+                                    <constraint firstAttribute="width" constant="208" id="71X-zF-faU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the magic word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCV-j1-6EZ">
+                                <rect key="frame" x="79" y="262" width="217" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="YkS-TB-42K"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="KrN-y2-haR"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Look at this peedan, enter some words and the peedan will sing for it." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OBZ-R6-e4y">
+                                <rect key="frame" x="29" y="351" width="316" height="181"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is Singing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtG-yc-rXz">
+                                <rect key="frame" x="50" y="130" width="276" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="81" id="4mB-bQ-fGW"/>
+                                    <constraint firstAttribute="height" constant="81" id="BW2-nu-wtY"/>
+                                    <constraint firstAttribute="width" constant="276" id="L10-Yi-vJd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="VkF-23-EWj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qtG-yc-rXz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="09k-PP-RDk"/>
+                            <constraint firstItem="yCV-j1-6EZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="79" id="NBd-Z6-ki8"/>
+                            <constraint firstItem="lMi-wE-495" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R55-Bi-FV3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OBZ-R6-e4y" secondAttribute="bottom" constant="135" id="Zza-IN-iHu"/>
+                            <constraint firstItem="OBZ-R6-e4y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="331" id="aP4-N1-pF5"/>
+                            <constraint firstAttribute="trailing" secondItem="yCV-j1-6EZ" secondAttribute="trailing" constant="79" id="aaF-Ql-UQU"/>
+                            <constraint firstItem="yCV-j1-6EZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gtk-oP-3fn"/>
+                            <constraint firstItem="OBZ-R6-e4y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="lMJ-cK-iRO"/>
+                            <constraint firstItem="lMi-wE-495" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="rXF-Xc-U3G"/>
+                            <constraint firstItem="yCV-j1-6EZ" firstAttribute="top" secondItem="qtG-yc-rXz" secondAttribute="bottom" constant="51" id="tn1-zE-bWC"/>
+                            <constraint firstItem="OBZ-R6-e4y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xOt-mO-jJ7"/>
+                            <constraint firstItem="qtG-yc-rXz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="yTQ-Zb-LuI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lyricView" destination="OBZ-R6-e4y" id="iOH-oL-ZBt"/>
+                        <outlet property="nameField" destination="yCV-j1-6EZ" id="t7b-yb-J2B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
